@@ -11,6 +11,6 @@ def make_predictions(clf, df_teste):
 
     # Salvar as previsões em um arquivo CSV
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    output_path = os.path.abspath(os.path.join(current_dir, '../data/predicoes.csv'))
+    output_path = os.path.abspath(os.path.join(current_dir, '../data/final.csv'))
     df_pred.to_csv(output_path, index=False)
     print(f"Previsões salvas em: {output_path}")
