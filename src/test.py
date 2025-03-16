@@ -7,9 +7,9 @@ parent_dir = os.path.abspath(os.path.join(current_dir, '..'))
 sys.path.append(parent_dir)
 
 # Importar os módulos usando importações absolutas
-from src.data_preparation import load_data
-from src.model_training import train_model
-from src.predict import make_predictions
+from dados import load_data
+from model_training import train_model
+from predict import make_predictions
 
 def main():
     # Carregar os dados
